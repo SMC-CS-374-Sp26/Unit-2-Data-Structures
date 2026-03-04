@@ -79,27 +79,50 @@
 	2. In-order 
 	3. Post-order
 -----
-## Easy
+## 1 Easy
 
-1. Suppose you seek to maintain the contents of a refrigerator so as to minimize food spoilage. What data structure should you use, and how should you use it?
-2. Imagine you have a closet full of shirts. What can you do to organize your shirts for easy retrieval?
+1.1. Suppose you seek to maintain the contents of a refrigerator so as to minimize food spoilage. What data structure should you use, and how should you use it?
+
+1.2. Imagine you have a closet full of shirts. What can you do to organize your shirts for easy retrieval?
 
 ---
 
-## Medium
+## 2 Medium
 
-1. Design a stack $S$ that supports `S.push(x)`, `S.pop()`, `S.findmin()`, which returns the minimum element of $S$. All operations should run **in constant time**.
-2. Design a data structure to support the following operations:
-	1. `Insert(x,T)` – insert the item `x` into the set `T`.
-	2. `Delete(k,T)` – delete the `k`th smallest element from `T`.
-	3. `Member(x,T)` – return true iff `x` is in `T`.  
-   All operations must take $O(log n)$ time on an n-element set. Prove or reason that it does so.
+2.1. Design a stack $S$ that supports `S.push(x)`, `S.pop()`, `S.findmin()`, which returns the minimum element of $S$. All operations should run **in constant time**.
+
+2.2. Design a data structure to support the following operations:
+
+1. `Insert(x,T)` – insert the item `x` into the set `T`.
+2. `Delete(k,T)` – delete the `k`th smallest element from `T`.
+3. `Member(x,T)` – return true iff `x` is in `T`.  
+
+All operations must take $O(log n)$ time on an n-element set. Prove or reason that it does so.
+
+2.3. Design an efficient data structure to handle the following operations on a weighted directed graph. Your description should _incorporate_ the union-find data structure. Describe clearly what modifications you will make to the exisiting union-find structure, and present an argument to the new structure's computational complexity for each operation of importance.
+
+1. Merge two given components.
+2. Locate which component contains a given vertex $v$.
+3. Retrieve a minimum edge from a given component.
+
+2.4. You wish to store a set of $n$ numbers in either a max-heap or a sorted array. For each application below, state which data structure is better, or if it does not matter. Explain your answers.
+
+1. Find the maximum element quickly.
+2. Delete an element quickly.
+3. Form the structure quickly.
+4. Find the minimum element quickly.
 
 -----
-## Hard
-3. What is the best data structure for maintaining URLs that have been visited by a web crawler? Describe an algorithm to test whether a given URL has already been visited, optimizing both space and time.
-4. Tic-tac-toe is a game played on an n x n board (typically n=3) where two players take consecutive turns placing “O” and “X” marks onto the board cells. The game is won if n consecutive “O” or “X” marks are placed in a row, column, or diagonal. Create a data structure with O(n) space that accepts a sequence of moves, and reports in constant time whether the last move won the game.
-5. Your friends in the SMC nursing program need to keep track of their clinical hours. Your friends in the SMC education program need to keep track of their teaching hours, as well. When you talk to the faculty, you realize that the students submit their hours to a central spreadsheet. They get flagged if they have not yet completed enough hours compared to their peers (there is a sample, "standard" peer, who has the exemplary number of hours so that the faculty have a benchmark). 
-   Describe a data structure that, given a new student's submission, adequately computes the amount of time. You should generally describe the following operations: Insert (student adds the course), Search, Delete (student drops clinical course). Provide worst-case complexity of each operation.
-   Your answer should involve no actual code, only a high-level description of the algorithm(s).
-6. The library, in its course of moving to the Power Plant, has stored 1 million video games in a room in Ageno East. Develop a short proposal that addresses the following questions: On what metrics should the items be accessed? If we design a data structure to help the library search function report the current catalog, what is best way to store the items in the computer? How should they be accessed, what does insertion or retrieval of a video game look like in code? Use technical terms you have learned wherever possible.
+## 3 Hard
+
+3.1 What is the best data structure for maintaining URLs that have been visited by a web crawler? Describe an algorithm to test whether a given URL has already been visited, optimizing both space and time.
+
+3.2. Tic-tac-toe is a game played on an n x n board (typically n=3) where two players take consecutive turns placing “O” and “X” marks onto the board cells. The game is won if n consecutive “O” or “X” marks are placed in a row, column, or diagonal. Create a data structure with O(n) space that accepts a sequence of moves, and reports in constant time whether the last move won the game.
+
+3.3. Your friends in the SMC nursing program need to keep track of their clinical hours. Your friends in the SMC education program need to keep track of their teaching hours, as well. When you talk to the faculty, you realize that the students submit their hours to a central spreadsheet. They get flagged if they have not yet completed enough hours compared to their peers (there is a sample, "standard" peer, who has the exemplary number of hours so that the faculty have a benchmark). 
+
+Describe a data structure that, given a new student's submission, adequately computes the amount of time. You should generally describe the following operations: Insert (student adds the course), Search, Delete (student drops clinical course). Provide worst-case complexity of each operation.
+
+Your answer should involve no actual code, only a high-level description of the algorithm(s).
+
+3.4. The library, in its course of moving to the Power Plant, has stored 1 million video games in a room in Ageno East. Develop a short proposal that addresses the following questions: On what metrics should the items be accessed? If we design a data structure to help the library search function report the current catalog, what is best way to store the items in the computer? How should they be accessed, what does insertion or retrieval of a video game look like in code? Use technical terms you have learned wherever possible.
