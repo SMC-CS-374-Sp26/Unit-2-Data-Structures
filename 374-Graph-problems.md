@@ -13,6 +13,7 @@ $E = \{(a,b),(a,c),(b,c),(b,d),(c,d),(d,e),(e,f),(e,g),(e,h),(f,g),(g,h)\}$
 
 **Required for problems 1.3 and 1.4**: Modify the graph by adding the following weights to the edges.
 $E_{weighted} = \{(a,b,9),(a,c,1),(b,c,7),(b,d,6),(c,d,5),(d,e,5),(e,f,4),(e,g,3),(e,h,10),(f,g,8),(g,h,1)\}$
+
 1.3. Show the minimum spanning tree constructed using first **Prim's** algorithm (begin at vertex $d$), then **Kruskal's** algorithm. What is the weight of the MST produced by each algorithm?
 
 1.4. (must complete 1.3 first) Are the two MSTs different? If so, describe how and why they differ. If not, reason why both algorithms produce the same result.
@@ -40,7 +41,7 @@ $E_{weighted} = \{(a,b,9),(a,c,1),(b,c,7),(b,d,6),(c,d,5),(d,e,5),(e,f,4),(e,g,3
 2.2. A particular academic program has $n$ required courses, certain pairs of which have prerequisite relations so that $(x,y)$ means you must take course $x$ before $y$. How would you analyze the prerequisite pairs to make sure it is possible for people to complete the program?
 
 
-2.3. Your job is to arrange $n$ ill-behaved children in a single-file line, with everyone facing front. You are given a list of statements of the form “$i$ hates $j$.” If child $i$ hates child $j$, then you do not want to put $i$ somewhere behind $j$, because then $i$ is capable of throwing something at $j$.
+2.3. Your job is to arrange $n$ ill-behaved children in a single-file line, with everyone facing front. You are given a list of statements of the form “ $i$ hates $j$.” If child $i$ hates child $j$, then you do not want to put $i$ somewhere behind $j$, because then $i$ is capable of throwing something at $j$. Assume this is not reciprocal: if $i$ hates $j$, $j$ might not hate $i$.
 
 a. Give an algorithm that orders the line (or says that it is not possible) in $O(n+m)$ time.
 
@@ -49,11 +50,11 @@ b. Suppose instead you want to arrange the children in rows such that if i hates
 
 2.4. A *matching* in a graph is a set of disjoint edges: that is, edges that do not have common vertices. Give a linear-time algorithm to find a maximum matching in a tree.
 
-2.5. Describe a specific, real-world situation not yet mentioned in class or in this problem set, in which graph coloring solves a useful issue. Describe and draw a specific graph that applies to this situation. Then determine the graph's coloring, and state your conclusion to the situation.
+2.5. Describe a specific, real-world situation not yet mentioned in class or in this problem set, in which graph _coloring_ solves a useful issue. Describe and draw a specific graph that applies to this situation. Then determine the graph's **coloring**, and state your conclusion to the situation.
 
-2.6. Describe a specific, real-world situation not yet mentioned in class or in this problem set, in which the minimum spanning tree solves a useful issue. Describe and draw a specific graph that applies to this situation. Then determine the graph's MST, and state your conclusion to the situation.
+2.6. Describe a specific, real-world situation not yet mentioned in class or in this problem set, in which the _minimum spanning tree_ solves a useful issue. Describe and draw a specific graph that applies to this situation. Then determine the graph's **MST**, and state your conclusion to the situation.
 
-2.7. Describe a specific, real-world situation not yet mentioned in class or in this problem set, in which shortest path or network flow (choose one) solves a useful issue. Describe and draw a specific graph that applies to this situation. Then determine the graph's shortest path/maximum flow, and state your conclusion to the situation.
+2.7. Describe a specific, real-world situation not yet mentioned in class or in this problem set, in which _shortest path_ or _network flow_ (choose one) solves a useful issue. Describe and draw a specific graph that applies to this situation. Then determine the graph's **shortest path**/**maximum flow**, and state your conclusion to the situation.
 
 
 -----
